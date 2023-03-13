@@ -71,7 +71,6 @@ while True:
     ip_address = checkIp(input('Enter ip Address:'))
     if ip_address == None: print('Wrong IP Adress')
   
-  print(type(ip_address))
   url = ''.join(IPBASE_URL+IPBASE_KEY+'&ip='+ip_address)
   print('Retrieving', url)
   connection = urllib.request.urlopen(url)
