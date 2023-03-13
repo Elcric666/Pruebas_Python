@@ -72,7 +72,7 @@ while True:
     if ip_address == None: print('Wrong IP Adress')
   
   url = ''.join(IPBASE_URL+IPBASE_KEY+'&ip='+ip_address)
-  print('Retrieving', url)
+  print('Retrieving...')
   connection = urllib.request.urlopen(url)
   data = connection.read().decode()
   js = json.loads(data)
@@ -84,6 +84,7 @@ while True:
   print('Coordinates: ', js['data']['location']['latitude'], ',', js['data']['location']['longitude'])
   break
 '''
+
 
 # Objetos y Clases
 '''
@@ -123,6 +124,33 @@ j = PartyAnimal("Jim")
 j.party()
 s.party()
 '''       
+'''
+class PartyAnimal:
+  x = 0
+  name = ""
+  def __init__(self, z):
+    self.name = z
+    print(self.name, "constructed")
+  def party(self):
+    self.x += 1
+    print(self.name, "party count", self.x)
+    
+class FootballFan(PartyAnimal):
+  points = 0
+  def touchdown(self):
+    self.points += 7
+    self.party()
+    print(self.name, "points", self.points)
+
+s = PartyAnimal("Sally")
+s.party()
+
+j = FootballFan("Jim")
+j.party()
+j.touchdown()
+'''
+
+
     
 
 
