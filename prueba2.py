@@ -48,7 +48,7 @@ for item in info:
   print('Id:', item['id'])
   print('Attribute:', item['x'])
 '''
-
+'''
 # Te pide una dirección ip, la valida, la envía a la API de IpBase y te muestra el nombre del dominio y su ubicación
 
 def checkIp(ip):
@@ -83,11 +83,47 @@ while True:
         , js['data']['location']['continent']['name_translated'],'.')
   print('Coordinates: ', js['data']['location']['latitude'], ',', js['data']['location']['longitude'])
   break
+'''
 
+# Objetos y Clases
+'''
+class PartyAnimal:
+  x = 0
+  
+  def __init__(self):
+    print('I\'m Constructed')
+    
+  def __del__(self):
+    print('I\'m destructed')
+    
+  def party(self):
+    self.x += 2
+    print(self.x)
 
+animal = PartyAnimal()
+animal.party()
+animal = 0
+'''
 
-       
+'''
+class PartyAnimal:
+  x = 0
+  name = ""
+  def __init__(self, z):
+    self.name = z
+    print(self.name, "constructed")
+  def party(self):
+    self.x += 1
+    print(self.name, "party count", self.x)
 
+s = PartyAnimal("Sally")
+s.party()
+
+j = PartyAnimal("Jim")
+j.party()
+s.party()
+'''       
+    
 
 
 
