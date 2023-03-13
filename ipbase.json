@@ -1,0 +1,134 @@
+{
+  "data": {
+      "ip": "1.1.1.1",
+      "hostname": "one.one.one.one",
+      "type": "v4",
+      "range_type": {
+          "type": "PUBLIC",
+          "description": "Public address"
+      },
+      "connection": {
+          "asn": 13335,
+          "organization": "Cloudflare, Inc.",
+          "isp": "APNIC Research and Development",
+          "range": "1.1.1.1/32"
+      },
+      "location": {
+          "geonames_id": 5332870,
+          "latitude": 34.053611755371094,
+          "longitude": -118.24549865722656,
+          "zip": "90012",
+          "continent": {
+              "code": "NA",
+              "name": "North America",
+              "name_translated": "North America"
+          },
+          "country": {
+              "alpha2": "US",
+              "alpha3": "USA",
+              "calling_codes": [
+                  "+1"
+              ],
+              "currencies": [
+                  {
+                      "symbol": "$",
+                      "name": "US Dollar",
+                      "symbol_native": "$",
+                      "decimal_digits": 2,
+                      "rounding": 0,
+                      "code": "USD",
+                      "name_plural": "US dollars"
+                  }
+              ],
+              "emoji": "\ud83c\uddfa\ud83c\uddf8",
+              "ioc": "USA",
+              "languages": [
+                  {
+                      "name": "English",
+                      "name_native": "English"
+                  }
+              ],
+              "name": "United States",
+              "name_translated": "United States",
+              "timezones": [
+                  "America/New_York",
+                  "America/Detroit",
+                  "America/Kentucky/Louisville",
+                  "America/Kentucky/Monticello",
+                  "America/Indiana/Indianapolis",
+                  "America/Indiana/Vincennes",
+                  "America/Indiana/Winamac",
+                  "America/Indiana/Marengo",
+                  "America/Indiana/Petersburg",
+                  "America/Indiana/Vevay",
+                  "America/Chicago",
+                  "America/Indiana/Tell_City",
+                  "America/Indiana/Knox",
+                  "America/Menominee",
+                  "America/North_Dakota/Center",
+                  "America/North_Dakota/New_Salem",
+                  "America/North_Dakota/Beulah",
+                  "America/Denver",
+                  "America/Boise",
+                  "America/Phoenix",
+                  "America/Los_Angeles",
+                  "America/Anchorage",
+                  "America/Juneau",
+                  "America/Sitka",
+                  "America/Metlakatla",
+                  "America/Yakutat",
+                  "America/Nome",
+                  "America/Adak",
+                  "Pacific/Honolulu"
+              ],
+              "is_in_european_union": false,
+              "fips": "US",
+              "geonames_id": 6252001,
+              "hasc_id": "US",
+              "wikidata_id": "Q30"
+          },
+          "city": {
+              "fips": "644000",
+              "alpha2": null,
+              "geonames_id": 5368753,
+              "hasc_id": null,
+              "wikidata_id": "Q65",
+              "name": "Los Angeles",
+              "name_translated": "Los Angeles"
+          },
+          "region": {
+              "fips": "US06",
+              "alpha2": "US-CA",
+              "geonames_id": 5332921,
+              "hasc_id": "US.CA",
+              "wikidata_id": "Q99",
+              "name": "California",
+              "name_translated": "California"
+          }
+      },
+      "tlds": [
+          ".us"
+      ],
+      "timezone": {
+          "id": "America/New_York",
+          "current_time": "2023-03-13T07:42:31-04:00",
+          "code": "EDT",
+          "is_daylight_saving": true,
+          "gmt_offset": -14400
+      },
+      "security": {
+          "is_anonymous": null,
+          "is_bot": null,
+          "is_known_attacker": null,
+          "is_proxy": null,
+          "is_spam": null,
+          "is_tor": null,
+          "proxy_type": null,
+          "threat_score": null
+      },
+      "domains": {
+          "count": null,
+          "domains": []
+      }
+  }
+}
