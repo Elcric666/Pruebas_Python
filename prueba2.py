@@ -48,9 +48,9 @@ for item in info:
   print('Id:', item['id'])
   print('Attribute:', item['x'])
 '''
-'''
-# Te pide una dirección ip, la valida, la envía a la API de IpBase y te muestra el nombre del dominio y su ubicación
 
+# Te pide una dirección ip, la valida, la envía a la API de IpBase y te muestra el nombre del dominio y su ubicación
+'''
 def checkIp(ip):
   numbers = ip.split('.')
   if (len(numbers) != 4):
@@ -84,6 +84,7 @@ while True:
   print('Coordinates: ', js['data']['location']['latitude'], ',', js['data']['location']['longitude'])
   break
 '''
+
 
 
 # Objetos y Clases
