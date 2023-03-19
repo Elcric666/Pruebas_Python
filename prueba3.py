@@ -258,6 +258,7 @@ add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
 print(travel_log)
 '''
 
+'''
 # Blind Auction
 
 from auction_art import logo
@@ -269,11 +270,7 @@ buyer = {}
 buyer_list = []
 high = 0
 winner = 0
-"""
-buyer = {"Name" : "Pepe" , "Bid" : "$100"}
-buyer_list.append(buyer)
-print(buyer_list[0]["Bid"])
-"""
+
 while should_continue == "yes" or should_continue == "y":
   os.system("cls")
   print(logo)
@@ -282,6 +279,16 @@ while should_continue == "yes" or should_continue == "y":
   buyer = {"Name" : name, "Bid" : bid}
   buyer_list.append(buyer)
   should_continue = input("Are there any other bidders? Type 'yes' or 'no' ")
+  
+"""
+Manera más sencilla:
+bids = {}
+  
+name = input("What is your name? ")
+price = input("What is your bid? ")
+bids[name] = price  
+  
+"""
   
 for n in range(0, len(buyer_list)):
   h = int(buyer_list[n]["Bid"].strip("$"))
@@ -295,8 +302,62 @@ winner_bid = buyer_list[winner]["Bid"]
 os.system("cls")
 print(logo)
 print(f"\nThe winner is {winner_name} with {winner_bid}")  
-
+'''
+'''
+# Calculator
  
+from calculator_art import logo
+
+def add(n1, n2):
+  return n1 + n2
+
+def substract(n1, n2):
+  return n1 - n2
+
+def multiply(n1, n2):
+  return n1 * n2
+
+def divide(n1, n2):
+  return n1 / n2
+
+operations = {
+  "+" : add,
+  "-" : substract,
+  "*" : multiply,
+  "/" : divide
+}
+
+should_continue = "yes"
+
+
+def calculate(n1, n2, operation):
+  return operations[operation](n1, n2)
+
+def print_logo():
+  os.system("cls")
+  print(logo)
+  print("\n")
+
+print_logo()
+num1 = float(input("What\'s the first number? "))
+while should_continue == "yes":
+  num2 = float(input("What\'s the second number? "))
+  for symbol in operations:
+    print(symbol)
+  operation_symbol = input("Pick an operation from the line above ")
+  answer = calculate(num1, num2, operation_symbol)
+  print(f"{num1} {operation_symbol} {num2} = {answer}")
+  should_continue = input(f"Do you want to continue calculating with this result? ({answer}) Type \'yes\', \'no\' or \'new\' ")
+  num1 = answer
+  if should_continue == "new":
+    print_logo()
+    num1 = float(input("What\'s the first number? "))
+    should_continue = "yes"
+  elif should_continue == "yes":
+    print_logo()
+'''
+
+
   
 
 
