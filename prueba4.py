@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 import json
 import ipbase
 import sqlite3
-from random import randint
+import random
 import os
 
 '''
@@ -202,3 +202,82 @@ for number in range(1, 101):
     print([number])
 """
 
+""" 
+# Higher Lower Game
+
+from HiLo_art import logo
+from HiLo_art import vs
+from HiLo_game_data import data
+
+should_continue = True
+
+def choose_personality(active_personality):
+  choosen = active_personality
+  while choosen == active_personality:
+    choosen = random.choice(data)
+  return choosen
+
+def clear_screen():
+  os.system("cls")
+  print(logo)
+  
+old_personality = choose_personality(random.choice(data))
+points = 0
+
+
+clear_screen()
+new_personality = choose_personality(old_personality)
+print("Compare A: %s, a %s, from %s." % (old_personality["name"], old_personality["description"], old_personality["country"]))
+print(vs)
+print("Against B: %s, a %s, from %s." % (new_personality["name"], new_personality["description"], new_personality["country"]))
+choice = input("Who has more followers? Type \'a\' or \'b\': ")
+
+while should_continue == True:
+  if choice == "a":
+    if old_personality["follower_count"] > new_personality["follower_count"] : guess = True
+    else : guess = False
+    
+  if choice == "b":
+    if new_personality["follower_count"] > old_personality["follower_count"] : guess = True
+    else : guess = False
+    
+  if guess == True:
+    points += 1
+    clear_screen()
+    print(f"You're right! Current score: {points}")
+    old_personality = new_personality
+    print("Compare A: %s, a %s, from %s." % (old_personality["name"], old_personality["description"], old_personality["country"]))
+    print(vs)
+    new_personality = choose_personality(old_personality)
+    print("Against B: %s, a %s, from %s." % (new_personality["name"], new_personality["description"], new_personality["country"]))
+    choice = input("Who has more followers? Type \'a\' or \'b\': ")
+      
+  else:
+    clear_screen()
+    print(f"Sorry, that's wrong. Final score: {points}")
+    again = input("Do you want to play again? \'y\' \'n\' ")
+    if again == "n":
+      should_continue = False
+      print("Bye!")
+    else:
+      clear_screen()
+      old_personality = choose_personality(random.choice(data))
+      new_personality = choose_personality(old_personality)
+      print("Compare A: %s, a %s, from %s." % (old_personality["name"], old_personality["description"], old_personality["country"]))
+      print(vs)
+      print("Against B: %s, a %s, from %s." % (new_personality["name"], new_personality["description"], new_personality["country"]))
+      choice = input("Who has more followers? Type \'a\' or \'b\': ")
+"""
+ 
+      
+      
+  
+
+    
+    
+
+
+  
+  
+  
+  
